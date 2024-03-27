@@ -33,6 +33,7 @@ func (h NoteHandler) HandleGetNotes(c echo.Context) error {
 		os.Exit(1)
 	}
 	return c.JSON(http.StatusFound, notes)
+	// comment
 }
 
 func (h NoteHandler) HandleNoteSave(c echo.Context) error {
